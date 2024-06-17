@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits - Urban Groceries</title>
+    <!-- Add necessary CSS -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .products {
+            text-align: center;
+            padding: 50px 0;
+        }
+        
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 0 20px;
+        }
+        
+        .product {
+            width: calc(33.33% - 20px);
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+        }
+        
+        .product:hover {
+            box-shadow: 0 8px 16px rgba(76, 175, 80, 0.4); /* Darker shadow */
+        }
+        
+        .product img {
+            width: auto;
+            height: 200px; /* Fixed height */
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        
+        .product-content {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .product h2 {
+            margin-top: 0;
+            font-size: 20px;
+        }
+        
+        .price {
+            font-size: 18px;
+        }
+        
+        .quantity {
+            display: block;
+            margin-top: 10px;
+        }
+        
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: transparent; /* Initially transparent */
+            color: black; /* Initially black text */
+            text-decoration: none;
+            border: 1px solid #4CAF50; /* Green border */
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s; /* Add color transition */
+        }
+        
+        .btn:hover {
+            background-color: #4CAF50; /* Green background on hover */
+            color: white; /* White text on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header section (if necessary) -->
+        
+        <!-- Product section -->
+        <section class="products" id="vegetables">
+            <h1 class="heading">Fruits</h1>
+            <div class="product-grid">
+                <!-- Fruit products -->
+                <div class="product">
+                    <img src="image/apples.jpeg" alt="Apple">
+                    <div class="product-content">
+                        <h2>Apples</h2>
+                        <div class="price">Rs 30/-
+                            <span class="quantity">Qty: 1kg</span>
+                        </div>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+                
+                <div class="product">
+                    <img src="image/banana.jpeg" alt="Banana">
+                    <div class="product-content">
+                        <h2>Bananas</h2>
+                        <div class="price">Rs 25/-
+                            <span class="quantity">Qty: 500g</span>
+                        </div>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+                
+
+                <div class="product">
+                    <img src="image/avocado.jpeg" alt="Avocado">
+                    <div class="product-content">
+                        <h2>Avocado</h2>
+                        <div class="price">Rs 25/-
+                            <span class="quantity">Qty: 1kg</span>
+                        </div>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="image/melon1.jpeg" alt="Watermelon">
+                    <div class="product-content">
+                        <h2>Watermelon</h2>
+                        <div class="price">Rs 15/-
+                            <span class="quantity">Qty: 500g</span>
+                        </div>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+
+
+                <div class="product">
+                    <img src="image/kiwi.jpeg" alt="Kiwi">
+                    <div class="product-content">
+                        <h2>Kiwi</h2>
+                        <div class="price">Rs 25/-
+                            <span class="quantity">Qty: 500g</span>
+                        </div>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="image/oranges.jpeg" alt="oranges">
+                    <div class="product-content">
+                        <h2>Oranges</h2>
+                        <div class="price">Rs 45/-
+                            <span class="quantity">Qty: 1kg</span>
+                        </div>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+
+                <!-- Add more vegetable products here -->
+            </div>
+        </section>
+    </div>
+    <!-- Footer section (if necessary) -->
+</body>
+</html>
